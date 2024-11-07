@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+} 
+
+ button{
+    padding: 15px;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    bottom: auto;
+    width: 15%;
+    height: 10%;
+    margin-top: 500px;
+    margin-left: 600px;
+    background-color: rgb(118, 238, 158);
+
+    
+
+ }
+
+ button:hover{
+    background-color: rgb(176, 230, 213);
+    cursor: pointer;
+ }
+.nuvem{
+    position: absolute;
+
+}
+
+.gamer-board {
+    width: 100%;
+    height: 500px;
+    border-bottom: 15px solid green;
+    margin: 0 auto;
+    position: relative;
+    background-image: linear-gradient(blue,white);
+
+}
+
+.quadrado {
+    position: absolute;
+    width: 80px;
+    bottom: 0;
+    animation: game 1.5s infinite linear;
+    
+    
+   
+}
+
+.pessoa {
+    width: 150px;
+    position: absolute;
+    bottom: 0;
+    
+    
+}
+
+.jump {
+    animation: jump 500ms;
+
+}
+
+.nuvem {
+    width: 550px;
+    animation: nuvem 10s infinite linear;
+}
+
+@keyframes game {
+  
+    from {
+        right: -80px;
+    }
+
+    to {
+        right: 100%;
+    }
+    
+}
+
+@keyframes jump {
+
+    0% {
+        bottom: 0;
+    }
+
+    40% {
+        bottom: 180px;
+    }
+
+    50% {
+        bottom: 180px;
+    }
+
+    60% {
+        bottom: 180px;
+    }
+
+    100% {
+        bottom: 0;
+    }
+
+
+}
+
+@keyframes nuvem {
+     from { 
+        right: -550px;
+    }
+
+    to {
+        right: 100%;
+    }
+    
+}
+
+
+
