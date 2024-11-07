@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
             pessoa.style.animation = 'none'
             pessoa.style.bottom = `${pessoaPosition}px`;
 
-            pessoa.src = 'tumulo.png';
+            pessoa.src = "tumulo.png";
             pessoa.style.width = '120px'
 
             clearInterval(loop);
