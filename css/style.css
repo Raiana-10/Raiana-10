@@ -43,7 +43,7 @@ a {
     position: relative;
     background-image: linear-gradient(blue,white);
     overflow: hidden;
-    background-attachment: fixed;
+    position: fixed;
 
 
 }
