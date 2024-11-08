@@ -50,7 +50,7 @@ a {
     position: absolute;
     width: 80px;
     bottom: 0;
-    animation: game 3s infinite linear;
+    animation: game 1.5s infinite linear;
     
     
    
@@ -65,7 +65,7 @@ a {
 }
 
 .jump {
-    animation: jump 1.5s;
+    animation: jump 3s;
 
 }
 
