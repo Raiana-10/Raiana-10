@@ -44,7 +44,7 @@ a {
     background-image: linear-gradient(blue,white);
     overflow: hidden;
     background-attachment: fixed;
-    position: fixed;
+    position: absolute;
 
 }
 
