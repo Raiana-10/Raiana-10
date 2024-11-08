@@ -42,7 +42,9 @@ a {
     margin: 0 auto;
     position: relative;
     background-image: linear-gradient(blue,white);
-    overflow: hidden;
+    overflow: hidden
+    background-attachment: fixed;
+
 
 }
 
