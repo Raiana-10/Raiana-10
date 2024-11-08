@@ -11,14 +11,35 @@ a {
 
 button {
     padding: 5px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px black;
+    background-color: rgb(58, 233, 175);
     border: none;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    background-color: rgb(118, 238, 158);
-    width: 15%;
-    height: 10%;
-    margin-top: 500px;
+    margin-top: 200px;  /* Mantém a margem superior do botão */
     margin-left: 600px;
+}
+
+body {
+    background-image: linear-gradient(to bottom, blue 50%, green 50%);
+    background-attachment: fixed;  /* Mantém o fundo fixo enquanto o conteúdo rola */
+    height: 100%;  /* Garantir que o body tenha a altura total do conteúdo */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.gamer-board {
+    width: 100%;
+    height: 90vh;  /* A altura da área de jogo */
+    margin-top: 50px;  /* Ajuste a margem superior para mover mais para baixo */
+    border-bottom: 15px solid green;
+    margin: 0 auto;
+    position: relative;
+    background-image: linear-gradient(blue, white);
+    overflow-x: hidden;
+    padding-top: 50px;  /* Adiciona um pouco de espaçamento superior */
 }
 
 button:hover {
@@ -28,16 +49,6 @@ button:hover {
 
 .nuvem {
     position: absolute;
-}
-
-.gamer-board {
-    width: 100%;
-    height: 100%;
-    border-bottom: 15px solid green;
-    margin: 0 auto;
-    position: relative;
-    background-image: linear-gradient(blue, white);
-    overflow-x: hidden;
 }
 
 .quadrado {
@@ -66,7 +77,6 @@ button:hover {
     from {
         right: -80px;
     }
-
     to {
         right: 100%;
     }
@@ -109,7 +119,9 @@ button:hover {
     }
 
     .gamer-board {
-        height: 300px;  /* Menor altura para telas pequenas */
+        margin-top: 40px;  /* Menor margem superior para telas pequenas */
+        height: 80vh;  /* Ajusta a altura da área de jogo */
+        padding-top: 20px; /* Espaço superior reduzido */
     }
 
     .quadrado {
@@ -134,14 +146,15 @@ button:hover {
 /* Media Query para dispositivos muito pequenos (celulares menores) */
 @media (max-width: 480px) {
     button {
-        width: 70%;
-        height: 8%;
-        margin-top: 20px;
-        margin-left: 15%;
+        margin-top: 10px;  /* Margem ainda menor para telas muito pequenas */
+        height: 60vh;  /* Ajusta a altura para caber melhor na tela */
+        padding-top: 10px; /* Mais espaço reduzido */
     }
 
     .gamer-board {
-        height: 250px;  /* Menor altura para telas ainda menores */
+        margin-top: 30px;  /* Margem superior ajustada para telas muito pequenas */
+        height: 70vh;  /* Ajusta a altura da área de jogo */
+        padding-top: 10px; /* Mais espaço reduzido */
     }
 
     .quadrado {
@@ -156,9 +169,4 @@ button:hover {
         width: 300px;  /* Ajusta o tamanho da nuvem */
     }
 }
-
-
-
-
-
 
