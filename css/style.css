@@ -5,47 +5,39 @@
 }
 
 a {
-
     color: rgb(255, 255, 255);
     text-decoration: none;
-} 
+}
 
- button{
-    padding: 15px;
+button {
+    padding: 5px;
     border: none;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
-    bottom: auto;
+    background-color: rgb(118, 238, 158);
     width: 15%;
     height: 10%;
     margin-top: 500px;
     margin-left: 600px;
-    background-color: rgb(118, 238, 158);
+}
 
-    
-
- }
-
- button:hover{
+button:hover {
     background-color: rgb(176, 230, 213);
     cursor: pointer;
- }
-.nuvem{
-    position: absolute;
+}
 
+.nuvem {
+    position: absolute;
 }
 
 .gamer-board {
     width: 100%;
-    height: 700px;
-    border-bottom: 85px solid green;
+    height: 100%;
+    border-bottom: 15px solid green;
     margin: 0 auto;
     position: relative;
-    background-image: linear-gradient(blue,white);
-    overflow: hidden;
-    background-attachment: fixed;
-    position: absolute;
-
+    background-image: linear-gradient(blue, white);
+    overflow-x: hidden;
 }
 
 .quadrado {
@@ -53,22 +45,16 @@ a {
     width: 80px;
     bottom: 0;
     animation: game 1.5s infinite linear;
-    
-    
-   
 }
 
 .pessoa {
     width: 150px;
     position: absolute;
     bottom: 0;
-    
-    
 }
 
 .jump {
-    animation: jump 500ms;
-
+    animation: jump 700ms;
 }
 
 .nuvem {
@@ -77,7 +63,6 @@ a {
 }
 
 @keyframes game {
-  
     from {
         right: -80px;
     }
@@ -85,52 +70,92 @@ a {
     to {
         right: 100%;
     }
-    
 }
 
 @keyframes jump {
-
     0% {
         bottom: 0;
     }
-
     40% {
         bottom: 180px;
     }
-
     50% {
         bottom: 180px;
     }
-
     60% {
         bottom: 180px;
     }
-
     100% {
         bottom: 0;
     }
-
-
 }
 
 @keyframes nuvem {
-     from { 
+    from {
         right: -550px;
     }
-
     to {
         right: 100%;
     }
-    
 }
 
+/* Media Query para dispositivos móveis */
+@media (max-width: 768px) {
+    button {
+        width: 50%;
+        height: 8%;
+        margin-top: 30px;
+        margin-left: 25%;
+    }
 
+    .gamer-board {
+        height: 300px;  /* Menor altura para telas pequenas */
+    }
 
+    .quadrado {
+        width: 60px;  /* Tamanho menor para quadrados */
+    }
 
+    .pessoa {
+        width: 120px;  /* Ajusta o tamanho da pessoa */
+    }
 
+    .nuvem {
+        width: 400px;  /* Ajusta o tamanho da nuvem */
+    }
 
+    /* Ajusta a posição do botão em telas pequenas */
+    button {
+        margin-top: 20px;
+        margin-left: 20%;
+    }
+}
 
+/* Media Query para dispositivos muito pequenos (celulares menores) */
+@media (max-width: 480px) {
+    button {
+        width: 70%;
+        height: 8%;
+        margin-top: 20px;
+        margin-left: 15%;
+    }
 
+    .gamer-board {
+        height: 250px;  /* Menor altura para telas ainda menores */
+    }
+
+    .quadrado {
+        width: 50px;  /* Tamanho ainda menor para quadrados */
+    }
+
+    .pessoa {
+        width: 100px;  /* Ajusta o tamanho da pessoa */
+    }
+
+    .nuvem {
+        width: 300px;  /* Ajusta o tamanho da nuvem */
+    }
+}
 
 
 
