@@ -15,16 +15,16 @@ button {
     box-shadow: 5px 5px 5px black;
     background-color: rgb(58, 233, 175);
     border: none;
-    margin-top: 200px;  /* Mantém a margem superior do botão */
-    display: block;  /* Faz o botão ser tratado como bloco */
-    margin-left: auto;  /* Centraliza horizontalmente */
-    margin-right: auto;  /* Centraliza horizontalmente */
+    margin-top: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 body {
     background-image: linear-gradient(to bottom, blue 50%, green 50%);
-    background-attachment: fixed;  /* Mantém o fundo fixo enquanto o conteúdo rola */
-    height: 100%;  /* Garantir que o body tenha a altura total do conteúdo */
+    background-attachment: fixed;
+    height: 100%;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -32,14 +32,14 @@ body {
 
 .gamer-board {
     width: 100%;
-    height: 90vh;  /* A altura da área de jogo */
-    margin-top: 50px;  /* Ajuste a margem superior para mover mais para baixo */
+    height: 90vh;
+    margin-top: 50px;
     border-bottom: 15px solid green;
     margin: 0 auto;
     position: relative;
     background-image: linear-gradient(blue, white);
     overflow-x: hidden;
-    padding-top: 50px;  /* Adiciona um pouco de espaçamento superior */
+    padding-top: 50px;
 }
 
 button:hover {
@@ -62,11 +62,11 @@ button:hover {
     width: 150px;
     position: absolute;
     bottom: 0;
-    transition: bottom 0.3s;  /* Adiciona uma transição suave ao movimento */
+    transition: bottom 0.3s;
 }
 
 .jump {
-    animation: jump 700ms ease-in-out;  /* Ajuste a animação para uma transição mais suave */
+    animation: jump 700ms ease-in-out;
 }
 
 .nuvem {
@@ -88,13 +88,13 @@ button:hover {
         bottom: 0;
     }
     40% {
-        bottom: 250px;  /* Aumentei a altura do pulo */
+        bottom: 250px;
     }
     50% {
-        bottom: 250px;  /* A altura máxima do pulo */
+        bottom: 250px;
     }
     60% {
-        bottom: 250px;  /* A altura máxima do pulo */
+        bottom: 250px;
     }
     100% {
         bottom: 0;
@@ -110,63 +110,61 @@ button:hover {
     }
 }
 
-/* Media Query para dispositivos móveis */
+/* Media Queries para dispositivos móveis */
 @media (max-width: 768px) {
     button {
         width: 50%;
         height: auto;
         margin-top: 30px;
-        padding: 10px 20px;  /* Ajusta o padding */
-        margin-left: auto;  /* Centraliza horizontalmente */
-        margin-right: auto;  /* Centraliza horizontalmente */
+        padding: 10px 20px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .gamer-board {
-        margin-top: 40px;  /* Menor margem superior para telas pequenas */
-        height: 80vh;  /* Ajusta a altura da área de jogo */
-        padding-top: 20px; /* Espaço superior reduzido */
+        margin-top: 40px;
+        height: 80vh;
+        padding-top: 20px;
     }
 
     .quadrado {
-        width: 60px;  /* Tamanho menor para quadrados */
+        width: 60px;
     }
 
     .pessoa {
-        width: 120px;  /* Ajusta o tamanho da pessoa */
+        width: 120px;
     }
 
     .nuvem {
-        width: 400px;  /* Ajusta o tamanho da nuvem */
+        width: 400px;
     }
 }
 
-/* Media Query para dispositivos muito pequenos (celulares menores) */
 @media (max-width: 480px) {
     button {
-        margin-top: 10px;  /* Margem ainda menor para telas muito pequenas */
-        height: auto;  /* Ajusta automaticamente a altura do botão */
-        padding: 10px 20px;  /* Reduz o padding para que o botão fique mais compactado */
-        width: 80%;  /* O botão ocupa 80% da largura da tela */
-        margin-left: auto;  /* Centraliza horizontalmente */
-        margin-right: auto;  /* Centraliza horizontalmente */
+        margin-top: 10px;
+        height: auto;
+        padding: 10px 20px;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .gamer-board {
-        margin-top: 30px;  /* Margem superior ajustada para telas muito pequenas */
-        height: 70vh;  /* Ajusta a altura da área de jogo */
-        padding-top: 10px; /* Mais espaço reduzido */
+        margin-top: 30px;
+        height: 70vh;
+        padding-top: 10px;
     }
 
     .quadrado {
-        width: 50px;  /* Tamanho ainda menor para quadrados */
+        width: 50px;
     }
 
     .pessoa {
-        width: 100px;  /* Ajusta o tamanho da pessoa */
+        width: 100px;
     }
 
     .nuvem {
-        width: 300px;  /* Ajusta o tamanho da nuvem */
+        width: 300px;
     }
 }
-
