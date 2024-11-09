@@ -16,7 +16,9 @@ button {
     background-color: rgb(58, 233, 175);
     border: none;
     margin-top: 200px;  /* Mantém a margem superior do botão */
-    margin-left: 600px;
+    display: block;  /* Faz o botão ser tratado como bloco */
+    margin-left: auto;  /* Centraliza horizontalmente */
+    margin-right: auto;  /* Centraliza horizontalmente */
 }
 
 body {
@@ -113,8 +115,9 @@ button:hover {
         width: 50%;
         height: auto;
         margin-top: 30px;
-        margin-left: 25%;
         padding: 10px 20px;  /* Ajusta o padding */
+        margin-left: auto;  /* Centraliza horizontalmente */
+        margin-right: auto;  /* Centraliza horizontalmente */
     }
 
     .gamer-board {
@@ -134,12 +137,6 @@ button:hover {
     .nuvem {
         width: 400px;  /* Ajusta o tamanho da nuvem */
     }
-
-    /* Ajusta a posição do botão em telas pequenas */
-    button {
-        margin-top: 20px;
-        margin-left: 20%;
-    }
 }
 
 /* Media Query para dispositivos muito pequenos (celulares menores) */
@@ -149,23 +146,5 @@ button:hover {
         height: auto;  /* Ajusta automaticamente a altura do botão */
         padding: 10px 20px;  /* Reduz o padding para que o botão fique mais compactado */
         width: 80%;  /* O botão ocupa 80% da largura da tela */
-    }
-
-    .gamer-board {
-        margin-top: 30px;  /* Margem superior ajustada para telas muito pequenas */
-        height: 70vh;  /* Ajusta a altura da área de jogo */
-        padding-top: 10px; /* Mais espaço reduzido */
-    }
-
-    .quadrado {
-        width: 50px;  /* Tamanho ainda menor para quadrados */
-    }
-
-    .pessoa {
-        width: 100px;  /* Ajusta o tamanho da pessoa */
-    }
-
-    .nuvem {
-        width: 300px;  /* Ajusta o tamanho da nuvem */
-    }
-}
+        margin-left: auto;  /* Centraliza horizontalmente */
+        margin-right
