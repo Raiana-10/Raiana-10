@@ -88,18 +88,16 @@ button:hover {
         bottom: 0;
     }
     40% {
-        bottom: 250px;
-    }
-    50% {
-        bottom: 250px;
+        bottom: 250px;  /* altura máxima do pulo */
     }
     60% {
-        bottom: 250px;
+        bottom: 250px;  /* mantém a altura máxima por mais tempo */
     }
     100% {
-        bottom: 0;
+        bottom: 0;  /* volta ao chão */
     }
 }
+
 
 @keyframes nuvem {
     from {
