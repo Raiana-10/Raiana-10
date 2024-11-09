@@ -62,10 +62,11 @@ button:hover {
     width: 150px;
     position: absolute;
     bottom: 0;
+    transition: bottom 0.3s;  /* Adiciona uma transição suave ao movimento */
 }
 
 .jump {
-    animation: jump 900ms;
+    animation: jump 700ms ease-in-out;  /* Ajuste a animação para uma transição mais suave */
 }
 
 .nuvem {
@@ -87,13 +88,13 @@ button:hover {
         bottom: 0;
     }
     40% {
-        bottom: 180px;
+        bottom: 250px;  /* Aumentei a altura do pulo */
     }
     50% {
-        bottom: 180px;
+        bottom: 250px;  /* A altura máxima do pulo */
     }
     60% {
-        bottom: 180px;
+        bottom: 250px;  /* A altura máxima do pulo */
     }
     100% {
         bottom: 0;
@@ -147,4 +148,25 @@ button:hover {
         padding: 10px 20px;  /* Reduz o padding para que o botão fique mais compactado */
         width: 80%;  /* O botão ocupa 80% da largura da tela */
         margin-left: auto;  /* Centraliza horizontalmente */
-        margin-right
+        margin-right: auto;  /* Centraliza horizontalmente */
+    }
+
+    .gamer-board {
+        margin-top: 30px;  /* Margem superior ajustada para telas muito pequenas */
+        height: 70vh;  /* Ajusta a altura da área de jogo */
+        padding-top: 10px; /* Mais espaço reduzido */
+    }
+
+    .quadrado {
+        width: 50px;  /* Tamanho ainda menor para quadrados */
+    }
+
+    .pessoa {
+        width: 100px;  /* Ajusta o tamanho da pessoa */
+    }
+
+    .nuvem {
+        width: 300px;  /* Ajusta o tamanho da nuvem */
+    }
+}
+
