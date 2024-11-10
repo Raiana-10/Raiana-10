@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
@@ -7,6 +10,8 @@
 a {
     color: rgb(255, 255, 255);
     text-decoration: none;
+    font-family: "Orbitron", sans-serif;
+
     
     
 
@@ -16,7 +21,7 @@ button {
     padding: 5px;
     border-radius: 5px;
     box-shadow: 5px 5px 5px black;
-    background-color: rgb(58, 233, 175);
+    background-color: rgb(233, 83, 83);
     border: none;
     margin-top: 200px;
     display: block;
@@ -37,7 +42,7 @@ body {
     position: absolute;
     top: 5px;
     left: 10px;
-    font-size: 24px;
+    font-size: 19px;
     color: white;
     font-weight: bold;
 }
@@ -55,7 +60,7 @@ body {
 }
 
 button:hover {
-    background-color: rgb(176, 230, 213);
+    background-color: rgb(236, 141, 141);
     cursor: pointer;
 }
 
@@ -174,6 +179,10 @@ button:hover {
         width: 100px;
     }
 
+    .nuvem {
+        width: 300px;
+    }
+}
     .nuvem {
         width: 300px;
     }
