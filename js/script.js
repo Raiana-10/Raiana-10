@@ -126,5 +126,3 @@ document.addEventListener('DOMContentLoaded', () => {
     // Iniciar o jogo
     startGame();
 });
-
- 
