@@ -40,9 +40,9 @@ body {
 
 #timer {
     position: absolute;
-    top: 5px;
+    top: 100px;
     left: 10px;
-    font-size: 19px;
+    font-size: 18px;
     color: white;
     font-weight: bold;
 }
@@ -179,10 +179,6 @@ button:hover {
         width: 100px;
     }
 
-    .nuvem {
-        width: 300px;
-    }
-}
     .nuvem {
         width: 300px;
     }
